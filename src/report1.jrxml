@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null"  pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="be4db089-7a07-4917-bfc6-02277aeb2fb7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+*
+FROM
+ compliance]]>
+	</queryString>
+	<field name="nationalId" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="accountNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="accountType" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kycDocument" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="compliance" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="179" y="0" width="288" height="55" uuid="858e585f-3ea7-4ee3-a823-42bd03b125a3"/>
+				<textElement>
+					<font fontName="Arial" size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KYC REPORT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="20" uuid="0f264c2d-e14b-4608-8e50-f548ffa4a629"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NATIONAL ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="30" width="100" height="20" uuid="b7aa0176-5a35-4401-a994-7879930b9712"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACCOUNT NUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="30" width="100" height="20" uuid="299522b5-d889-4008-9127-08f3f3938d56"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACCOUNT TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="30" width="100" height="20" uuid="8518908f-0f43-4327-a1bf-0025b6ef42d7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[KYC DOCUMENTS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="30" width="100" height="20" uuid="6c5245a5-9abe-4194-a52a-3eb50fb1806a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMPLIANCE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="14" width="100" height="20" uuid="26e1c575-3455-4027-9182-006161ced1f2"/>
+				<textFieldExpression><![CDATA[$F{nationalId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="14" width="100" height="20" uuid="b5d377a6-2a45-4cd8-aec3-ca06421d72af"/>
+				<textFieldExpression><![CDATA[$F{accountNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="233" y="14" width="100" height="20" uuid="486174d6-204b-4007-91ec-416758e55a60"/>
+				<textFieldExpression><![CDATA[$F{accountType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="14" width="100" height="20" uuid="beab2060-2c76-4c75-95f0-a4b91b1fe0d6"/>
+				<textFieldExpression><![CDATA[$F{kycDocument}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="14" width="100" height="20" uuid="ca2605b7-6cef-4710-aa6d-07f50b53e496"/>
+				<textFieldExpression><![CDATA[$F{compliance}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
